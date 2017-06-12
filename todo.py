@@ -1,7 +1,8 @@
 import sys
 from random import randint
+from os.path import expanduser
 
-file_name = "todos.txt"
+file_name = expanduser("~") + "/todos.txt"
 
 
 def load_list(file_name):
