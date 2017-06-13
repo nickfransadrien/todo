@@ -63,8 +63,12 @@ def run_interface(todos):
 
 
 def main():
-    
-    command = sys.argv[1]
+    if len(sys.argv) > 1:
+        command = sys.argv[1]
+    else:
+        command = "interface"
+
+
     todos = Todos()
 
 
